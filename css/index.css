@@ -1,0 +1,385 @@
+/* main */
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0 90px;
+  border-bottom: 1px solid #999;
+}
+
+#main .main_tit {
+  margin-right: 50px;
+  margin-top: 20px;
+  text-align: right;
+}
+#main .main_tit p {
+  font-size: 70px;
+}
+#main .main_tit p:nth-child(3) {
+  margin-top: 20px;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Quintessential', cursive;
+}
+
+#main .banner {
+  border: 1px solid #ddd;
+  margin-top: 70px;
+  margin-left: 50px;
+  padding: 50px 30px;
+  display: flex; justify-content: space-between;
+}
+#main .banner > div {width: 320px;}
+#main .banner > div:nth-child(1) {margin-right: 30px;}
+
+#main .banner .atbox {
+  display: flex; flex-flow: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+#main .banner .atbox > div {flex: 1;}
+#main .banner .atbox .articleTop .address {
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+}
+#main .banner .atbox .articleTop .address .birth i {margin-right: 5px;}
+#main .banner .atbox .articleTop .address .birth,.email {margin-top: 7px;}
+#main .banner .atbox .articleTop .address .sns {
+  margin: 25px 0;
+  font-size: 40px;
+}
+#main .banner .atbox .articleTop .address .sns a {
+  padding: 2px; margin: 0 5px;
+}
+#main .banner .atbox .articleLow > div {
+  margin-bottom: 10px;
+}
+#main .banner .atbox .articleLow p {
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+/* skills */
+#skills {
+  padding: 50px 0 230px;
+  border-bottom: 1px solid #999;
+  position: relative;
+}
+#skills h2 {margin-bottom: 100px;}
+
+#skills .icon {width: 80px; margin-left:70px;}
+#skills .slideOuter {position: relative;}
+#skills .slideOuter .slide3 .icon {width: 70px;}
+
+#skills .slideOuter .slick-arrow {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  font-size: 60px; color: #ddd; cursor: pointer;
+  background: none;
+  border: none;}
+#skills .slideOuter .slick-arrow.slick-prev {left: 100px; z-index: 9999;}
+#skills .slideOuter .slick-arrow.slick-next {right: 100px;}
+
+#skills .slideOuter .slick-dots {position: absolute; bottom: -110px;
+  left: 50%; transform: translateX(-50%);}
+#skills .slideOuter .slick-dots li {display: inline-block; margin: 0 5px;}
+#skills .slideOuter .slick-dots li button {
+  width: 15px; height: 15px;
+  border: none;
+  border-radius: 50%;
+  background: #ddd;
+  color: #ddd;
+  cursor: pointer;}
+#skills .slideOuter .slick-dots li.slick-active button {background: #999; color: #999;}
+
+#skills .slide {display: flex; align-items: center; justify-content: center;}
+
+#skills .percent {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 50px;
+  width: 500px;
+  height: 50px;
+  margin-left: 50px;
+  transition: all 1s;
+}
+#skills .slide .percent p {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);}
+#skills .preparing .percent p {
+  color: #fff;}
+
+#skills .slideInner .slide .graph {
+  border-radius: 50px;
+  width: 0; height: 50px;}
+#skills .slideInner .html .graph {width: 0%; background: orange; transition: all 2s;}
+#skills .slideInner .html.slick-active .graph {width: 95%;}
+#skills .slideInner .css .graph {width: 0%; background: skyblue; transition: all 2s;}
+#skills .slideInner .css.slick-active .graph {width: 90%;}
+#skills .slideInner .js .graph {width: 0%; background: palegoldenrod; transition: all 2s;}
+#skills .slideInner .js.slick-active .graph {width: 75%;}
+#skills .slideInner .jquery .graph {width: 0%; background: rgb(40, 122, 245); transition: all 2s;}
+#skills .slideInner .jquery.slick-active .graph {width: 75%;}
+#skills .slideInner .react .graph {width: 0%; background: rgb(129, 183, 253); transition: all 2s;}
+#skills .slideInner .react.slick-active .graph {width: 30%;}
+#skills .slideInner .mysql .graph {width: 0%; background: forestgreen; transition: all 2s;}
+#skills .slideInner .mysql.slick-active .graph {width: 15%;}
+#skills .slideInner .preparing .graph {width: 0%; background: #999; transition: all 2s;}
+#skills .slideInner .preparing.slick-active .graph {width: 100%;}
+
+#skills .frame {
+  width: 950px;
+  position: absolute; top: 60%; left: 50%;
+  transform: translate(-53%, -50%);
+}
+
+
+
+/* Portfolio Part */
+#portfolio {
+  position: relative;
+  font-family: 'Noto Sans KR', sans-serif;
+  border-bottom: 1px solid #999;
+}
+#portfolio h2 {padding-top: 50px;}
+
+#portfolio .portbox {
+  width: 1250px;
+  margin: 50px auto 120px;
+  padding: 30px 50px 50px;
+  border: 1px solid #ddd;
+}
+
+#portfolio .portbox .portInner .portSlide .slide {
+  display: flex; justify-content: space-between; align-items: center;
+}
+#portfolio .portbox .portInner .portSlide .slide > div {flex: 1;}
+
+#portfolio .portbox .portInner .portSlide .slide .portImg {position: relative;}
+#portfolio .portbox .portInner .portSlide .slide .portImg p img {
+  display: block;
+  border: 3px solid #000; border-radius: 20px;
+}
+#portfolio .portbox .portInner .portSlide .slide .portImg .img2 img {
+  position: absolute; top: 10px; left: 15px;
+  z-index: -99;
+}
+#portfolio .portbox .portInner .portSlide .slide .portImg .img2.on img {z-index: 9;}
+#portfolio .portbox .portInner .portSlide .slide .portImg .img3 img {
+  position: absolute; top: 20px; left: 30px;
+  z-index: -999;
+}
+#portfolio .portbox .portInner .portSlide .slide .portImg .img4 img {
+  position: absolute; top: 20px; left: 30px;
+  z-index: -9999;
+}
+#portfolio .portbox .portInner .portSlide .slide .portImg .img3.on img {z-index: 9;}
+#portfolio .portbox .portInner .portSlide .slide .portImg .img4.on img {z-index: 9;}
+
+
+#portfolio .portbox .portInner .portSlide .slide .portExplain {margin-left: 50px;}
+#portfolio .portbox .portInner .portSlide .slide .portExplain h4 {margin: 15px 0 3px;}
+#portfolio .portbox .portInner .portSlide .slide .portExplain > p {margin-top: 5px;}
+#portfolio .portbox .portInner .portSlide .slide .portExplain .pageN span:nth-child(1) {
+  border: 1px solid rgb(85, 85, 85);
+  background-color: #000; color: #fff;
+}
+#portfolio .portbox .portInner .portSlide .slide .portExplain .pageN span {
+  display: inline-block;
+  width: 20px; height: 20px;
+  margin-right: 3px;
+  background-color: #ddd;
+  border: 1px solid #000; border-radius: 50%;
+  text-align: center; line-height: 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+#portfolio .portbox .portInner .portSlide .slide .portExplain .pageN span:hover {
+  border: 1px solid rgb(85, 85, 85);
+  background-color: #000; color: #fff;
+}
+#portfolio .portbox .portInner .portSlide .slide .portExplain .portText {padding: 5px 5px 10px;}
+#portfolio .portbox .portInner .portSlide .slide .portExplain .plusEx {
+  color: blue; font-size: 14px;
+  margin-left: 12px;
+}
+
+#portfolio .portbox .portInner .portSlide .slide .portExplain .btn {
+  width: 100px;
+  margin: 5px auto 0; padding: 10px;
+  border-radius: 30px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+  /* 포트폴리오 슬라이드 */
+#portfolio .portbox .portInner .portSlide .slick-track {padding: 20px 0 50px;}
+
+#portfolio .portbox .portInner .slick-dots {position: absolute; bottom: -20px; right: 30px;}
+#portfolio .portbox .portInner .slick-dots li {display: inline-block;}
+#portfolio .portbox .portInner .slick-dots li button {
+  width: 40px; height: 40px;
+  border: none;
+  font-size: 20px;
+  background: #ddd;
+  cursor: pointer;}
+#portfolio .portbox .portInner .slick-dots li.slick-active button {
+  background: #000; color: #fff;
+}
+
+  /* 신문 이미지 배치 */
+#portfolio .newsPaper {position: absolute;}
+#portfolio .paperLT {width: 230px; top: 50px; left: 20px;}
+@keyframes moving {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {
+    left: 50px;
+    opacity: 0;
+  }
+}
+#portfolio .paperLB {
+  width: 200px; bottom: 70px; left: 300px;
+  animation: moving;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  
+}
+#portfolio .paperRT {
+  width: 240px;
+  top: 20px; right: 70px;
+  transform: rotate(60deg);
+}
+
+
+
+/* Clone coding Part */
+#practice {
+  font-family: 'Noto Sans KR', sans-serif;
+  position: relative;
+  border-bottom: 1px solid #999;}
+#practice h2 {padding-top: 50px;}
+
+#practice .portbox {
+  width: 1250px;
+  margin: 50px auto 120px;
+  padding: 30px 50px;
+  border: 1px solid #ddd;
+}
+#practice .portbox h4 {text-align: center; padding: 15px 0 8px;}
+#practice .portbox .port .port-explain p {
+  padding: 0 15px 10px; text-align: center;
+}
+#practice .portbox .port .port-explain p:last-child {padding-bottom: 15px;}
+
+#practice .portbox .portTop{
+  margin: 0 auto 20px;
+  width: 1000px;
+}
+
+#practice .portbox .portLow {
+  width: 1000px; margin: 0 auto;
+  display: flex;
+}
+#practice .portbox .portLow .innerLeft,.innerRight {width: 50%;}
+#practice .portbox .portLow .innerLeft {
+  display: flex; flex-flow: column;
+  margin-right: 20px;
+}
+#practice .portbox .portLow .innerLeft .port {margin-bottom: 20px;}
+#practice .portbox .portLow .innerLeft .port:last-child {margin-bottom: 0;}
+
+#practice .portbox .portLow .innerRight {
+  display: flex; flex-flow: column;
+}
+#practice .portbox .portLow .innerRight .port {flex: 1; margin-bottom: 20px;}
+#practice .portbox .portLow .innerRight .port:last-child {margin-bottom: 0;}
+
+#practice .newsPaper {
+  position: absolute;
+
+  animation: rotate;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  0% {transform: rotate(7deg);}
+  100% {transform: rotate(-7deg);}
+}
+
+#practice .paperLT {width: 200px; top: 70px; left: 30px;}
+#practice .paperLB {width: 210px; bottom: 90px; left: 50px;}
+#practice .paperRS {width: 180px; top: 25%; right: 30px;}
+#practice .paperRB {width: 230px; bottom: 90px; right: 50px;}
+
+  /* Practice: 이동 button */
+#practice .port {
+  position: relative;
+  border: 1px solid #ddd;
+}
+#practice .port .imgBox {
+  position: relative;
+}
+#practice .port .imgBox .linkbtn {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  border-radius: 50px;
+  width: 150px; height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+#practice .port .imgBox .linkbtn:hover {
+  background-color: #fff; color: #000;
+  border: 1px solid #000;
+}
+#practice .linkbtn p {
+  font-weight: 500;
+  text-align: center;
+  padding-top: 2px;
+}
+
+
+
+/* Contact */
+#contact h2 {
+  padding: 50px 10px 10px;
+  font-size: 60px;
+}
+#contact .contactBox {
+  display: flex; justify-content: space-evenly; align-items: center;
+}
+#contact .contactBox {flex: 1;}
+#contact .contactBox form label {
+  display: block;
+  font-size: 20px; font-family: 'Rowdies', cursive;
+  padding: 15px 0 10px;
+}
+#contact .contactBox form input {width: 500px; padding: 5px;}
+#contact .contactBox form #message {height: 200px; padding: 10px;}
+#contact .contactBox .contactImg img {width: 500px;}
+#contact .contactBox form .sendBtn {
+  display: block;
+  width: 500px;
+  padding: 15px 0; margin: 20px auto 0;
+  border: none;
+  background-color: #000; color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+#contact .contactBox form button:hover {
+  border: 1px solid #000;
+  background-color: #fff; color: #000;
+  font-size: 16px; font-weight: bold;
+}
+#contact .contactBox form .thankyou_message p {
+  padding-top: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+}

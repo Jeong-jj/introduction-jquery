@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Noto+Sans+KR:wght@300;400;500;700&family=Quintessential&family=Rowdies:wght@300&display=swap');
+/*
+  font-family: 'Comforter', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Quintessential', cursive;
+  font-family: 'Rowdies', cursive;
+*/
+
+body {
+  position: relative;
+  font-family: 'Rowdies', cursive;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: 'Quintessential', cursive;
+  text-align: center;
+}
+
+/* header */
+#header {
+  position: fixed; top: 0; left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99999999999;
+  border-bottom: 2px solid #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+#header .logo {
+  color: rgb(79, 79, 79);
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 200px;
+}
+#header .tit {
+  font-size: 30px;
+  font-family: 'Comforter', cursive;
+}
+#header .depth1 {margin-right: 50px; color: rgb(106, 106, 106);}
+#header .depth1 li {
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px;
+}
+#header .depth1 li:hover {color: #000; border-bottom: 1px solid #000;}
+#header .depth1 li+li {margin-left: 20px;}
+#header .depth1 li.on {color: rgb(201, 100, 17);}
+
+/* Footer */
+#footer {padding: 100px 0 80px; font-family: 'Quintessential', cursive;
+}
+#footer .rights {text-align: center;}
