@@ -35,9 +35,9 @@ $(window).on('scroll', function() {
 })
 
 // 설정안한 sns
-$('#main .banner .atbox .articleTop .address .sns a:nth-child(3)').on('click', function() {
-  alert("아직 준비되지 않은 sns링크입니다.")
-})
+// $('#main .banner .atbox .articleTop .address .sns a:nth-child(n)').on('click', function() {
+//   alert("아직 준비되지 않은 sns링크입니다.")
+// })
 
 // skills 슬라이드 효과
 $('#skills .slideOuter .slideInner').slick({
